@@ -117,10 +117,29 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# InCallUI
+PRODUCT_PACKAGES += \
+    InCallUI
+
+# OmniTorch
+PRODUCT_PACKAGES += \
+    OmniTorch
+
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface \
     macloader
+
+# This device supports CM enhanced NFC
+PRODUCT_COPY_FILES += \
+device/samsung/hlte-common/permissions/com.cyanogenmod.nfc.enhanced.xml:system/etc/permissions/com.cyanogenmod.nfc.enhanced.xml
+
+# CRDA
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/proprietary/crda/linville.key.pub.pem:system/lib/crda/linville.key.pub.pem \
+   $(LOCAL_PATH)/proprietary/crda/regulatory.bin:system/lib/crda/regulatory.bin \
+   $(LOCAL_PATH)/proprietary/crda/init.crda.sh:system/etc/init.crda.sh \
+   $(LOCAL_PATH)/proprietary/crda/crda:system/bin/crda \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
@@ -128,3 +147,31 @@ PRODUCT_COPY_FILES += \
 
 # Common msm8974
 $(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
+
+# All Extras
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/proprietary/app/DSPManager.apk:system/app/DSPManager.apk \
+   $(LOCAL_PATH)/proprietary/etc/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+   $(LOCAL_PATH)/proprietary/extras/ext4_utils/make_ext4fs_main.o:system/extras/ext4_utils/make_ext4fs_main.o \
+   $(LOCAL_PATH)/proprietary/extras/ext4_utils/make_ext4fs_main.P:system/extras/ext4_utils/make_ext4fs_main.P \
+   $(LOCAL_PATH)/proprietary/lib/libavcodec.so:system/lib/libavcodec.so \
+   $(LOCAL_PATH)/proprietary/lib/libavformat.so:system/lib/libavformat.so \
+   $(LOCAL_PATH)/proprietary/lib/libavutil.so:system/lib/libavutil.so \
+   $(LOCAL_PATH)/proprietary/lib/libcurve25519.so:system/lib/libcurve25519.so \
+   $(LOCAL_PATH)/proprietary/lib/libemoji.so:system/lib/libemoji.so \
+   $(LOCAL_PATH)/proprietary/lib/libFFmpegExtractor.so:system/lib/libFFmpegExtractor.so \
+   $(LOCAL_PATH)/proprietary/lib/libffmpeg_utils.so:system/lib/libffmpeg_utils.so \
+   $(LOCAL_PATH)/proprietary/lib/libnamparser.so:system/lib/libnamparser.so \
+   $(LOCAL_PATH)/proprietary/lib/libncurses.so:system/lib/libncurses.so \
+   $(LOCAL_PATH)/proprietary/lib/libnl_2.so:system/lib/libnl_2.so \
+   $(LOCAL_PATH)/proprietary/lib/libpci.so:system/lib/libpci.so \
+   $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ffmpegadec.so:system/lib/libstagefright_soft_ffmpegadec.so \
+   $(LOCAL_PATH)/proprietary/lib/libswresample.so:system/lib/libswresample.so \
+   $(LOCAL_PATH)/proprietary/lib/libswscale.so:system/lib/libswscale.so \
+   $(LOCAL_PATH)/proprietary/lib/libvt_jni.so:system/lib/libvt_jni.so \
+   $(LOCAL_PATH)/proprietary/lib/libxml2.so:system/lib/libxml2.so \
+   $(LOCAL_PATH)/proprietary/xbin/htop:system/xbin/htop \
+   $(LOCAL_PATH)/proprietary/xbin/lsof:system/xbin/lsof \
+   $(LOCAL_PATH)/proprietary/xbin/pigz:system/xbin/pigz \
+   $(LOCAL_PATH)/proprietary/xbin/powertop:system/xbin/powertop \
+   $(LOCAL_PATH)/proprietary/xbin/rsync:system/xbin/rsync
