@@ -148,6 +148,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     av.offload.enable=false
 
+# Note3 Advanced Settings
+PRODUCT_PACKAGES += \
+GalaxyNote3Settings
+
 # Common msm8974
 $(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
 
