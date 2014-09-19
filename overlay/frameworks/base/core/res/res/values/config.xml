@@ -243,4 +243,5 @@
 
     <!-- Boolean to enable stylus gestures -->
     <bool name="config_stylusGestures">true</bool>
+
 </resources>
