@@ -1,10 +1,50 @@
 [
   {
-    "repository": "android_device_samsung_msm8974-common",
-    "target_path": "device/samsung/msm8974-common"
+    "remote": "du",
+    "repository": "android_hardware_qcom_display-caf-bfam",
+    "target_path": "hardware/qcom/display-caf-bfam",
+    "revision": "du44"
   },
   {
-    "repository": "android_kernel_samsung_hlte",
-    "target_path": "kernel/samsung/hlte"
+    "remote": "du",
+    "repository": "android_hardware_qcom_media-caf-bfam",
+    "target_path": "hardware/qcom/media-caf-bfam",
+    "revision": "du44"
+  },
+  {
+    "remote": "du",
+    "repository": "android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "revision": "du44"
+  },
+  {
+    "remote": "du",
+    "repository": "android_device_qcom-common",
+    "target_path": "device/qcom-common",
+    "revision": "du44"
+  },
+  {
+    "remote": "du",
+    "repository": "android_device_samsung_msm8974-common",
+    "target_path": "device/samsung/msm8974-common",
+    "revision": "du44"
+  },
+  {
+    "remote": "du",
+    "repository": "android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "revision": "du44"
+  },
+  {
+    "remote": "du",
+    "repository": "proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "revision": "du44"
+  },
+  {
+    "remote": "du",
+    "repository": "kernel_samsung_hlte",
+    "target_path": "kernel/samsung/hlte",
+    "revision": "du44"
   }
-]
+] 
