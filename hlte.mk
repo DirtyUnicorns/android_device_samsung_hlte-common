@@ -157,7 +157,6 @@ $(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
 
 # All Extras
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/proprietary/app/DSPManager.apk:system/app/DSPManager.apk \
    $(LOCAL_PATH)/proprietary/etc/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
    $(LOCAL_PATH)/proprietary/extras/ext4_utils/make_ext4fs_main.o:system/extras/ext4_utils/make_ext4fs_main.o \
    $(LOCAL_PATH)/proprietary/extras/ext4_utils/make_ext4fs_main.P:system/extras/ext4_utils/make_ext4fs_main.P \
