@@ -301,4 +301,6 @@
         <item>1050</item>
     </integer-array> -->
 
+    <!-- Boolean to enable stk functionality on Samsung phones -->
+    <bool name="config_samsung_stk">true</bool>
 </resources>
