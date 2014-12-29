@@ -158,7 +158,13 @@
     <bool name="skip_restoring_network_selection">true</bool>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveNotificationLed">true</bool>
+   <!-- <bool name="config_intrusiveNotificationLed">true</bool> -->
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+   <!-- <bool name="config_intrusiveBatteryLed">true</bool> -->
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+   <!-- <bool name="config_multiColorBatteryLed">true</bool>  -->
 
 <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
@@ -216,25 +222,17 @@
     <!-- Disable the home key unlock setting -->
     <!-- <bool name="config_disableHomeUnlockSetting">false</bool> -->
 
-    <!-- Configure mobile tcp buffer sizes in the form:
-         rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
-         If no value is found for the rat-name in use, the system default will be applied.
-    -->
-    <string-array name="config_mobile_tcp_buffers">
-        <item>umts:4094,87380,704512,4096,16384,110208</item>
-        <item>hspa:4092,87380,704512,4096,16384,262144</item>
-        <item>hsupa:4092,87380,704512,4096,16384,262144</item>
-        <item>hsdpa:4092,87380,704512,4096,16384,110208</item>
-        <item>hspap:4092,87380,704512,4096,16384,262144</item>
-        <item>edge:4093,26280,35040,4096,16384,35040</item>
-        <item>gprs:4096,30000,30000,4096,8760,11680</item>
-        <item>evdo:4094,87380,262144,4096,16384,262144</item>
-        <item>lte:524288,1048576,2560000,524288,1048576,2560000</item>
-    </string-array>
-
-    <!-- Configure wifi tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,262144,524288,1048576</string>
+    <!-- Hardware 'face' keys present on the device, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following keys present:
+             1 - Home
+             2 - Back
+             4 - Menu
+             8 - Assistant (search)
+            16 - App switch
+         For example, a device with Home, Back and Menu keys would set this
+         config to 7. -->
+<!--    <integer name="config_deviceHardwareKeys">7</integer> -->
 
     <bool name="config_enableWifiDisplay">true</bool>
 
@@ -245,12 +243,7 @@
     <!-- <bool name="config_enableTorch">true</bool> -->
 
     <!-- Boolean to enable stylus gestures -->
-   <!-- <bool name="config_stylusGestures">true</bool> -->
-
-   <!-- Maximum number of supported users -->
-   <integer name="config_multiuserMaximumUsers">4</integer>
-   <!-- Whether Multiuser UI should be shown -->
-   <bool name="config_enableMultiUserUI">true</bool>
+   <!-- <bool name="config_stylusGestures">true</bool> --> 
 
     <!-- Performance profiles -->
    <!-- <string name="config_perf_profile_prop">sys.perf.profile</string>
@@ -275,6 +268,5 @@
         <item>960</item>
         <item>1050</item>
     </integer-array> -->
-
 
 </resources>
