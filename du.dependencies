@@ -8,15 +8,5 @@
     "repository": "DirtyUnicorns/android_kernel_samsung_hlte",
     "target_path": "kernel/samsung/hlte",
     "branch": "lollipop-caf"
-  },
-  {
-    "repository": "DirtyUnicorns/android_device_samsung_qcom-common",
-    "target_path": "device/samsung/qcom-common",
-    "branch": "lollipop-caf"
-  },
-  {
-    "repository": "DirtyUnicorns/android_device_qcom-common",
-    "target_path": "device/qcom/common",
-    "branch": "lollipop-caf"
   }
 ]
