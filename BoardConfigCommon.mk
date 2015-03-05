@@ -19,9 +19,6 @@ LOCAL_PATH := device/samsung/hlte-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8974
-
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00000000
