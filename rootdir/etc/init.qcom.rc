@@ -609,7 +609,7 @@ on property:sys.perf.profile=1
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor interactive
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor interactive
 
-    write /sys/class/kgsl/kgsl-3d0/devfreq/governor simple_ondemand
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
     start mpdecision
 
 on property:sys.perf.profile=2
