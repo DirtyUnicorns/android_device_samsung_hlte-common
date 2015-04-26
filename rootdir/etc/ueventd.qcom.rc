@@ -171,6 +171,7 @@
 /dev/wcnss_wlan           0660   system     system
 #nfc permissions
 /dev/nfc-nci              0660    nfc         nfc
+/dev/rfkill               0660   root       wifi
 
 # UIO devices
 /dev/uio0                 0660   system     system
