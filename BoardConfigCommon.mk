@@ -52,6 +52,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # CMHW
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
+# CHROMIUM
+USE_PREBUILT_CHROMIUM := true
+
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/hlte-common/ril
 
