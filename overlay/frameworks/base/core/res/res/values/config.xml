@@ -71,7 +71,7 @@
 
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">10</integer>
+    <integer name="config_screenBrightnessDim">2</integer>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
