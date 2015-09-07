@@ -61,15 +61,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8974
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/etc/gps.conf:/system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/etc/flp.conf:/system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf
+
 # camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
     libxml2
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/etc/gps.conf:/system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/etc/flp.conf:/system/etc/flp.conf \
-    $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf
+# charging mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.enable_boot_charger_mode=1
 
 # Input device
 PRODUCT_COPY_FILES += \
@@ -115,6 +119,7 @@ PRODUCT_PACKAGES += \
     init.crda.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
